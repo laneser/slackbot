@@ -15,7 +15,7 @@ excludes = (
     '*local_settings*',
 ) # yapf: disable
 
-setup(name='slackbotlv',
+setup(name='slackbot',
       version=__version__,
       license='MIT',
       description='A simple chat bot for Slack',
