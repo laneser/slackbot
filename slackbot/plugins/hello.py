@@ -52,3 +52,13 @@ def hey(message):
 @respond_to(u'你好')
 def hello_unicode_message(message):
     message.reply(u'你好!')
+
+
+@listen_to('start a thread')
+def start_thread(message):
+    message.reply('I started a thread', in_thread=True)
+
+@respond_to('say hi to me')
+def direct_hello(message):
+    message.direct_reply("Here you are")
+
